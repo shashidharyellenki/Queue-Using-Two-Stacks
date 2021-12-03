@@ -58,8 +58,11 @@ class Queue {
     }
 
     // Return the number of elements in queue.
+    //complexity: O(1)
     public boolean size() {
-        return stack1.size()+stack2.size();
+      int weight = stack1.size()+stack2.size();
+      if(weight>0) return true;
+      else return false;
     }
     
     public static void main(String[] args) {
