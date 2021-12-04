@@ -5,16 +5,24 @@ import java.io.*;
 import java.util.*;
 
 class Queue {
-
-
+    private Stack<Integer> stack1;
+    private Stack<Integer> stack2;
     public Queue() {
-
+    stack1= new Stack<Integer>();
+    stack2 = new  Stack<Integer>();
     }
 
     // Push element x to the back of queue.
+    //time complexity: O(N) memory:o(1)
     public void enqueue(int x) {
-
-    }
+		while(!stack1.isEmpty()) {
+			stack1.push(stack2.pop());
+		}
+		stack1.push(x);
+		while(!stack2.isEmpty()) {
+			stack2.push(stack1.pop());
+		}
+	}
 
     // Removes the element from in front of queue.
     public int dequeue() {
