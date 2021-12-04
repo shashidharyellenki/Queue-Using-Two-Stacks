@@ -32,7 +32,7 @@ class Queue {
     
     // Get the front element.
     public int peek() {
-
+        return stack1.peek();
     }
     
     // Return whether the queue is empty.
