@@ -14,13 +14,13 @@ class Queue {
 
     // Push element x to the back of queue.
     //time complexity: O(N) memory:o(1)
-    public void enQueue(int x) {
-		while(!stack2.isEmpty()) {
-			stack2.push(stack1.pop());
+    public void enqueue(int x) {
+		while(!stack1.isEmpty()) {
+			stack1.push(stack2.pop());
 		}
 		stack1.push(x);
 		while(!stack2.isEmpty()) {
-			stack1.push(stack2.pop());
+			stack2.push(stack1.pop());
 		}
 	}
 
