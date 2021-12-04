@@ -25,9 +25,10 @@ class Queue {
 	}
 
     // Removes the element from in front of queue.
-    public int dequeue() {
-
-    }
+    //time complexity: O(1) memory:o(1)
+    public int deQueue() {
+		return stack1.pop();
+	}
     
     // Get the front element.
     public int peek() {
