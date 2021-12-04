@@ -14,19 +14,29 @@ class Queue {
 
     // Push element x to the back of queue.
     //time complexity: O(N) memory:o(1)
-    public void enQueue(int x) {
-		while(!stack2.isEmpty()) {
+    public void enqueue(int x) {
+		while(!stack1.isEmpty()) {
 			stack2.push(stack1.pop());
 		}
-		stack1.push(x);
-		while(!stack2.isEmpty()) {
+		stack2.push(x);
+		while(!stack210
+        1 42
+        2
+        1 14
+        3
+        1 28
+        3
+        1 60
+        1 78
+        2
+        2.isEmpty()) {
 			stack1.push(stack2.pop());
 		}
 	}
 
     // Removes the element from in front of queue.
     //time complexity: O(1) memory:o(1)
-    public int deQueue() {
+    public int dequeue() {
 		return stack1.pop();
 	}
     
@@ -42,7 +52,7 @@ class Queue {
 
     // Return the number of elements in queue.
     public boolean size() {
-        return stack1.size()+stack2.size();
+        return (stack1.size()+stack2.size()>0)? (true):(false);
     }
     
     public static void main(String[] args) {
