@@ -31,11 +31,13 @@ class Queue {
 	}
     
     // Get the front element.
+	//time complexity: O(1) memory:o(1)
     public int peek() {
         return stack1.peek();
     }
     
     // Return whether the queue is empty.
+	//time complexity: O(1) memory:o(1)
     public boolean empty() {
         return (stack1.isEmpty() && stack2.isEmpty()) ? (true): (false);
     }
