@@ -31,6 +31,7 @@ class Queue {
 	}
     
     // Get the front element.
+	//time complexity: O(1) memory:o(1)
     public int peek() {
         return stack1.peek();
     }
