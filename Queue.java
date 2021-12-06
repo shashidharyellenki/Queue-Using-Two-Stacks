@@ -19,17 +19,7 @@ class Queue {
 			stack2.push(stack1.pop());
 		}
 		stack2.push(x);
-		while(!stack210
-        1 42
-        2
-        1 14
-        3
-        1 28
-        3
-        1 60
-        1 78
-        2
-        2.isEmpty()) {
+		while(!stack2.isEmpty()) {
 			stack1.push(stack2.pop());
 		}
 	}
@@ -51,6 +41,7 @@ class Queue {
     }
 
     // Return the number of elements in queue.
+	//time complexity: O(1) memory:o(1)
     public boolean size() {
         return (stack1.size()+stack2.size()>0)? (true):(false);
     }
