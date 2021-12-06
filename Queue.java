@@ -37,11 +37,13 @@ class Queue {
     }
     
     // Return whether the queue is empty.
+	//time complexity: O(1) memory:o(1)
     public boolean empty() {
 
     }
 
     // Return the number of elements in queue.
+	//time complexity: O(1) memory:o(1)
     public boolean size() {
 
     }
